@@ -1,8 +1,7 @@
-var Player = /** @class */ (function () {
-    function Player() {
-    }
-    Player.prototype.formatName = function () {
+"use strict";
+class Player {
+    formatName() {
         return this.name.toUpperCase();
-    };
-    return Player;
-}());
+    }
+}
+//# sourceMappingURL=player.js.map
