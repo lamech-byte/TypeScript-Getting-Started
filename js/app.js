@@ -1,4 +1,10 @@
 "use strict";
+;
+class Player {
+    formatName() {
+        return this.name.toUpperCase();
+    }
+}
 function startGame() {
     let playerName = getInputValue('playername');
     logPlayer(playerName);
@@ -7,15 +13,6 @@ function startGame() {
 }
 function logPlayer(name = 'MultiMath player') {
     console.log(`New game starting for player: ${name}`);
-}
-function getInputValue(elementID) {
-    const inputElement = document.getElementById(elementID);
-    if (inputElement.value === '') {
-        return undefined;
-    }
-    else {
-        return inputElement.value;
-    }
 }
 function postScore(score, playerName = 'MultiMath player') {
     let logger;
