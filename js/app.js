@@ -1,10 +1,4 @@
 "use strict";
-;
-class Player {
-    formatName() {
-        return this.name.toUpperCase();
-    }
-}
 function startGame() {
     let playerName = getInputValue('playername');
     logPlayer(playerName);
